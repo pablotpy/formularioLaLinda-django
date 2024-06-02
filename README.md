@@ -1,8 +1,7 @@
-<div align="center">
-  <img src="logo.png" height="90px" width="auto" alt="Logo">
+<div align="center" style="max-width: 500px; margin: 0 auto;">
+  <img src="logo.png" height="90px" width="auto" alt="Logo" style="display: block; margin: 0 auto;">
   <h2><em>Proyecto Django</em> - Formulario minimalista maquetado para Web y Móvil</h2>
 </div>
-
 <div align="center">
     <a href="#🚀-empezar">
         Empezar
