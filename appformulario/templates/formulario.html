@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <title>La Linda</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'img/lalindaestanevosp.png' %}" alt="">
+        <h1>MENSAJE DE PRUEBA</h1>
+        <h1 id="titulo1">¡VIVÍ MOMENTOS</h1>
+        <h1 id="titulo2">INOLVIDABLES!</h1>
+        <h1 id="titulo3">
+            <span class="negrita">Con cada compra,</span> generás un cupón electrónico para ganar.
+        </h1>
+        <img src="{% static 'img/PremiosP.png' %}" alt="">
+        <h1 id="titulo4">
+            <span class="negrita">Premios:</span> 1 Parrilla BBQ Grill Consumer + una caja de botellas La Linda
+        </h1>
+        <h1>¡Registrate para participar!</h1>    
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <h2>Ingresá una foto de tu factura o tícket de compra</h2>
+            <div class="form-group">   
+                <img src="{% static 'img/adjuntararchivo.webp' %}" alt="Ejemplo de imagen" onclick="document.getElementById('id_imagen').click();" style="max-width: 100%;">                
+            </div>
+            <div class="form-groupcheckbox">
+                <input type="checkbox" name="terminos" id="id_terminos">
+                <label for="id_terminos">Acepto los términos y condiciones</label>
+            </div>
+            <p id="mensaje"></p>
+            <button type="button"><a href="{% static 'files/basesycondiciones.pdf' %}" target="_blank">BASES Y CONDICIONES</a></button>
+            <!-- <button type="button">BASES Y CONDICIONES</button> -->
+            <button id="botonenviar" type="submit">Enviar</button>
+            <h3>Gracias por participar.</h3>
+            <h3>¡Buena suerte!</h3>
+            <img src="{% static 'img/lalindaestanevosp.png' %}" alt="">
+        </form>
+    </div>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
