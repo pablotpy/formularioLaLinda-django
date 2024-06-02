@@ -1,7 +1,7 @@
 <div align="center">
-<img src="logo.png" height="90px" width="auto" /> 
+<img src="logo.png" height="90px" width="auto" position="center" /> 
 <h2>
-    <em>Proyecto Formulario</em> minimalista maquetado para Web y Movil
+    <em>Proyecto Django</em>Formulario minimalista maquetado para Web y Movil
 </h2>
 <p>
 
@@ -44,55 +44,60 @@
 
 ## 🛠️ Stack
 
-- [**Astro**](https://astro.build/) - El framework web de la nueva época.
+- [**Django**](https://www.djangoproject.com/) - Django es un Framework web Python de alto nivel que fomenta un desarrollo rápido y un diseño limpio y pragmático.
 - [**Typescript**](https://www.typescriptlang.org/) - JavaScript con sintaxis de tipado.
-- [**Ninja Keys**](https://github.com/ssleptsov/ninja-keys) - Menu desplegable con atajos de teclado hecho en puro Javascript.
+
 
 
 ## 🚀 Empezar
 
-### 1. Usa este [repo](https://github.com/midudev/minimalist-portfolio-json) como _template_ de un proyecto de Astro
+### 1. Usa este [repo](https://github.com/pablotpy/formularioLaLinda-django) como _template_ de un proyecto de Sorteos Facil y Practico
 
 
-- Yo uso [pnpm](https://pnpm.io/installation) como gestor de dependencias y empaquetador.
+- Yo uso [pip](https://pypi.org/project/pip/) como gestor de dependencias y empaquetador.
 
 ```bash
-<<<<<<< HEAD
 python --version
 pip --version
 
-git clone https://github.com/tu-usuario/tu-proyecto.git
-cd tu-proyecto
-
+#Clona del proyecto LINUX
+mkdir formulario
+cd formulrio
+git clone https://github.com/pablotpy/formularioLaLinda-django.git . 
+code .
 =======
-# Activa pnpm en MacOS, WSL & Linux:
-corepack enable
-corepack prepare pnpm@latest --activate
+#Linux + Visual Studio Code - Crear Entorno Virtual:
+python3 -m venv venv
+source venv/bin/activate
+=======
+#Linux + Visual Studio Code - Instalar Librerias:
+pip install -R  requirements.txt
 
-# Inicializa el proyecto
-pnpm create astro@latest -- --template midudev/minimalist-portfolio-json
+# Inicializa de Migraciones a base de datos SQLITE3
+python manage.py makemigrations
+python manage.py migrate
+
+
 ```
 
-### 2. Añade tu contenido:
-Edita el archivo `cv.json` para crear tu propio Portafolio/CV imprimible.
-### 3. Lanza el servidor de desarrollo:
-
+### 2. Lanza el servidor de desarrollo:
 ```bash
-# Disfruta del resultado
-pnpm dev
+#RUN SERVER
+http://127.0.0.1:8000/
+
+
 ```
 
-
-1. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
+1. Abre [**http://127.0.0.1:8000/**](http://127.0.0.1:8000/) en tu navegador para ver el resultado 🚀
 
 
 ## 🧞 Comandos
 
 |     | Comando          | Acción                                        |
 | :-- | :--------------- | :-------------------------------------------- |
-| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en  `localhost:4321`.  |
-| ⚙️  | `build`          | Comprueba posibles errores y hace un empaquetado de producción en `./dist/`.      |
-| ⚙️  | `preview`        | Vista previa en local `localhost:4321` |
+| ⚙️  | `http://127.0.0.1:8000/` | Lanza un servidor de desarrollo local en  `http://127.0.0.1:8000/`.  |
+| ⚙️  | `python manage.py migrate`| Comprueba posibles errores y hace un empaquetado de producción en.      |
+| ⚙️  | `pip list`        | Lista de Librerias Instaladas en el entorno local `pip list` |
 
 
 
