@@ -1,12 +1,6 @@
 <div align="center">
-<img src="logo.png" height="90px" width="auto" align="center" /> 
-<h2>
-    <em>Proyecto Django</em>Formulario minimalista maquetado para Web y Movil
-</h2>
-<p>
-
-</p>
-
+  <img src="logo.png" height="90px" width="auto" alt="Logo">
+  <h2><em>Proyecto Django</em> - Formulario minimalista maquetado para Web y Móvil</h2>
 </div>
 
 <div align="center">
