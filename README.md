@@ -1,5 +1,5 @@
 <div align="center">
-<img src="logo.png" height="90px" width="auto" position="center" /> 
+<img src="logo.png" height="90px" width="auto" align="center" /> 
 <h2>
     <em>Proyecto Django</em>Formulario minimalista maquetado para Web y Movil
 </h2>
@@ -60,7 +60,7 @@
 python --version
 pip --version
 
-#Clona del proyecto LINUX
+#Clonar proyecto en LINUX
 mkdir formulario
 cd formulrio
 git clone https://github.com/pablotpy/formularioLaLinda-django.git . 
@@ -83,9 +83,7 @@ python manage.py migrate
 ### 2. Lanza el servidor de desarrollo:
 ```bash
 #RUN SERVER
-http://127.0.0.1:8000/
-
-
+python manage.py runserver
 ```
 
 1. Abre [**http://127.0.0.1:8000/**](http://127.0.0.1:8000/) en tu navegador para ver el resultado 🚀
@@ -101,7 +99,4 @@ http://127.0.0.1:8000/
 
 
 
-## 🔑 Licencia
 
-[MIT](LICENSE.txt) - Creado por [**midudev**](https://midu.dev).
->>>>>>> c9dc726 (Mejora Readme)
