@@ -17,7 +17,7 @@ Asegúrate de tener Python y pip instalados. Puedes verificarlos ejecutando:
 ```bash
 python --version
 pip --version
-```bash
+
 git clone https://github.com/tu-usuario/tu-proyecto.git
 cd tu-proyecto
 
